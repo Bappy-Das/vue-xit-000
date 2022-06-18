@@ -1,12 +1,14 @@
 <template>
-  <login />
+  <!-- <login /> -->
+  <registration />
 </template>
 
 <script setup>
-import Sidebar from "./components/Sidebar.vue";
-import Header from "./components/layouts/Header.vue";
-import Footer from "./components/layouts/Footer.vue";
+// import Sidebar from "./components/Sidebar.vue";
+// import Header from "./components/layouts/Header.vue";
+// import Footer from "./components/layouts/Footer.vue";
 import login from "./components/login/Login.vue";
+import registration from "./components/registration/Registration.vue";
 </script>
 
 <style lang="scss">
@@ -30,10 +32,6 @@ import login from "./components/login/Login.vue";
 
 body {
   background: var(--body-color);
-  position: relative;
-  width: 1440px;
-  height: 969px;
-  border-radius: 20px;
   overflow-x: hidden;
 }
 
@@ -56,5 +54,10 @@ button {
       padding-left: 6rem;
     }
   }
+}
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
 }
 </style>
