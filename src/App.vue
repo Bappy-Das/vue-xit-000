@@ -1,14 +1,11 @@
 <template>
-  <!-- <login /> -->
-  <registration />
+  <router-view />
 </template>
 
 <script setup>
-// import Sidebar from "./components/Sidebar.vue";
-// import Header from "./components/layouts/Header.vue";
-// import Footer from "./components/layouts/Footer.vue";
-import login from "./components/login/Login.vue";
-import registration from "./components/registration/Registration.vue";
+import Sidebar from "./components/Sidebar.vue";
+import Header from "./components/layouts/Header.vue";
+import Footer from "./components/layouts/Footer.vue";
 </script>
 
 <style lang="scss">
@@ -20,7 +17,6 @@ import registration from "./components/registration/Registration.vue";
   --dark-alt: #334155;
   --light: #f1f5f9;
   --sidebar-width: 300px;
-  --body-color: #ffffff;
 }
 
 * {
@@ -31,8 +27,7 @@ import registration from "./components/registration/Registration.vue";
 }
 
 body {
-  background: var(--body-color);
-  overflow-x: hidden;
+  background: var(--light);
 }
 
 button {
@@ -54,10 +49,5 @@ button {
       padding-left: 6rem;
     }
   }
-}
-p {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
 }
 </style>

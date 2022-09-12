@@ -48,9 +48,7 @@
                     <label for="loginPassword" class="form-label fw-500"
                       >Password</label
                     >
-                    <!-- <a class="float-end text-2" href="forgot-password-10.html"
-                      >Forgot Password ?</a
-                    > -->
+
                     <input
                       type="password"
                       class="form-control bg-light border-light"
@@ -78,10 +76,15 @@
                   <div
                     class="d-flex justify-content-between align-items-center mt-4"
                   >
-                    <h6>Don’t have an account ? Register here</h6>
-                    <button class="shadow-none mt-2" type="submit">
-                      Sign in
-                    </button>
+                    <h6>
+                      Don’t have an account ?
+                      <router-link to="/register"> Register here</router-link>
+                    </h6>
+                    <router-link to="/dashboard">
+                      <button class="shadow-none mt-2" type="submit">
+                        Sign in
+                      </button>
+                    </router-link>
                   </div>
                 </form>
               </div>
@@ -94,8 +97,6 @@
 </template>
 <style lang="scss" scoped>
 .hero-wrap {
-  //   position: absolute;
-
   background: linear-gradient(
     179.52deg,
     #f0ba1b -0.42%,
@@ -112,6 +113,10 @@
     top: 95.05%;
     bottom: 2.89%;
   }
+}
+img {
+  width: 153.95px;
+  height: 60px;
 }
 button {
   width: 100px;

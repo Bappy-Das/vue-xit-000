@@ -83,13 +83,6 @@
     </div>
 
     <div class="flex"></div>
-
-    <!-- <div class="menu">
-      <router-link to="/settings" class="button">
-        <span class="material-icons">settings</span>
-        <span class="text">Settings</span>
-      </router-link>
-    </div> -->
   </aside>
 </template>
 
@@ -119,7 +112,6 @@ aside {
   overflow: hidden;
   min-height: 100vh;
   padding: 1rem;
-  border-top-right-radius: 25px;
 
   transition: 0.2s ease-in-out;
 
@@ -227,7 +219,7 @@ aside {
     width: var(--sidebar-width);
 
     .menu-toggle-wrap {
-      // top: -3rem;
+      top: -3rem;
 
       .menu-toggle {
         transform: rotate(-180deg);
